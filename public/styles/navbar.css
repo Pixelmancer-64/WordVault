@@ -1,0 +1,65 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    min-height: 7vh;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+header img {
+    width: 3rem;
+}
+
+.logo {
+    padding-left: 1vh;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    padding-right: 1vh;
+}
+
+nav button {
+    font-size: 1rem;
+    align-items: center;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    justify-content: center;
+    line-height: 20px;
+    min-height: 40px;
+    overflow: hidden;
+    font-weight: bold;
+    padding: 0px;
+    padding: 0 1.5rem;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    vertical-align: middle;
+}
+
+.login{
+    background-color: rgb(73, 180, 73);
+}
+
+.register{
+    background-color: rgb(101, 160, 180);
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    display: inline-block;
+}

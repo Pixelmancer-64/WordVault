@@ -1,0 +1,34 @@
+<% layout('../layouts/boilerplate') %>
+
+<section class="hero">
+    <div class="container">
+        <section class="main">
+            <h1 class="introduction">WordVault, uma maneira simples de guardar suas anotações</h1>
+            <p class="description">Ajude seu navegador e salve um pouco de memória</p>
+            <div class="buttons">
+                <form action='/word/new'><button>Adicionar</button></form>
+                <form action='/word'><button>Todas as publicações</button></form>
+                <% if(user){ %>
+                <section>
+                    <form action="/user/<%= user.username %> "><button>Perfil</button></form>
+                </section>
+                <% } %>
+            </div>
+
+        </section>
+    </div>
+</section>
+
+<article class="about">
+    <div class="container">
+
+    <h2>O que é o WordVault?</h2>
+    <p>Devido ao meu problema crônico de abrir dezenas de abas no meu navegador e esquecer de sua existência por
+        semanas eu criei o WordVault. Eu guardo aqui tudo aquilo que eu pesquisei ou gostaria de pesquisar</p>
+    <p>
+        É tudo bem simples porque não há muita necessidade, eu só preciso de um jeito rápido e fácil de anotar,
+        editar e excluir anotações. Fique a vontade de recomendar algo para melhorar o site
+    </p>
+
+</div>
+</article>

@@ -1,0 +1,19 @@
+<% layout('../layouts/boilerplate') %>
+<form action="/word/<%= found.id %>?_method=PUT" method="POST" id='main' class='cool'>
+    <h1>EDIT</h1>
+    <label for="title">Title</label>
+    <input type="text" name="word[title]" id="title" placeholder="Title" value='<%= found.title %>'>
+
+    <label for="language">Language</label>
+    <input type="text" name="word[language]" id="language" placeholder="Language" value='<%= found.language %>'>
+
+    <label for="text">Text</label>
+    <textarea name="word[text]" id="text"><%= found.text %></textarea>
+
+    <label for="category">Category</label>
+    <input type="text" name="word[category]" id="category" placeholder="Category" value='<%= found.category %>'>
+
+    <button>Add word</button>
+</form>
+
+<script src="/formValidation.js" async defer></script>

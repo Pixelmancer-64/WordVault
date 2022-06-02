@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/imgs/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>WordVault</title>
+    <script src="/scripts.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/"><img src="/imgs/favicon.png" title="Home" /></a>
+        <a href="/">
+          <h3>WordVault</h3>
+        </a>
+      </div>
+
+      <% if(!user) {%>
+      <nav>
+        <ul>
+          <li>
+            <form action="/login"><button class="login">Log in</button></form>
+          </li>
+          <li>
+            <form action="/register">
+              <button class="register">Register</button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+      <%} else {%>
+      <nav>
+        <form action="/logout" method="POST">
+          <button class="login">Logout</button>
+        </form>
+      </nav>
+      <%}%>
+    </header>
+
+    <main><%-include('./flash.ejs')%> <%- body %></main>
+    <footer>
+      <p>wordVault, created by me, Hugo :p</p>
+    </footer>
+  </body>
+</html>

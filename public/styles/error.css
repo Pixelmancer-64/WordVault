@@ -1,0 +1,44 @@
+.errorCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(239, 68, 68);
+    color: rgb(239, 68, 68);
+    background-color: rgb(254, 226, 226);
+    width: 70vh;
+    padding: 2.5rem;
+    margin: 10vh auto;
+    border-radius: 10px;
+}
+
+.flash-alert {
+    min-width: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    padding: 2.5rem;
+    background: #132339;
+    border-radius: 10px;
+    border: 2px solid #6c86b7;
+    font-weight: bold;
+
+}
+
+.message {
+    font-size: 1.3rem;
+    margin-bottom: 1vh;
+}
+
+.error {
+    color: rgb(239, 68, 68);
+}
+
+.sucess {
+    color: #4BB543;
+
+}

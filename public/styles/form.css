@@ -1,0 +1,79 @@
+.cool {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    margin: 10vh auto;
+    width: 50%;
+    background: #151F28;
+    border-radius: 10px;
+}
+
+.cool label {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .2em;
+    color: #888;
+    margin-bottom: .5rem;
+}
+
+.cool label::after {
+    content: ':';
+}
+
+.cool h1 {
+    text-align: center;
+}
+
+.cool input[type="text"],
+.cool input[type="date"],
+.cool input[type="datetime"],
+.cool input[type="email"],
+.cool input[type="number"],
+.cool input[type="search"],
+.cool input[type="time"],
+.cool input[type="url"],
+.cool input[type="password"],
+.cool textarea,
+.cool select {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 6px;
+    border: 2px solid rgb(52, 53, 54);
+    background-color: rgb(26, 26, 27);
+    font-size: 1.3rem;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    margin-bottom: 1rem;
+    color: rgb(215, 218, 220);
+}
+
+.cool textarea {
+    resize: vertical;
+}
+
+.cool button {
+    margin-top: auto;
+    background: rgb(5, 150, 105);
+    padding: 1rem 0;
+    border-radius: 5px;
+    width: 100%;
+    color: #fff;
+    font: normal 1.3rem 'Bitter', serif;
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid rgb(23, 160, 116);
+}
+
+.cool button:hover,
+.cool button:focus {
+    background-color: rgb(23, 160, 116);
+    cursor: pointer;
+
+}
+
+.cool button:active {
+    background: rgb(24, 114, 85);
+    color: rgb(255, 255, 255, .7);
+}

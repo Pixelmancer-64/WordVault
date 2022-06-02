@@ -1,0 +1,13 @@
+<% if(sucess && sucess.length) {%>
+<div class="flash-alert sucess">
+    <%= sucess %>
+    <button id='remove' class="delete-item">X</button>
+</div>
+<% } %>
+
+<% if(error && error.length) {%>
+<div class="flash-alert error">
+    <%= error %>
+    <button id='remove' class="delete-item">X</button>
+</div>
+<% } %>

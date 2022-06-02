@@ -1,0 +1,17 @@
+<% layout('../layouts/boilerplate') %>
+
+<form action="/register" id='main' method="POST" class='cool'>
+    <h1>Register</h1>
+    <label for="user">Username</label>
+    <input type="text" name="user[username]" id="user" placeholder="Username">
+
+    <label for="password">Password</label>
+    <input type="password" name="user[password]" id="password">
+
+    <label for="email">Email</label>
+    <input type="text" name="user[email]" id="email" placeholder="Email">
+
+    <button>Subscribe!</button>
+</form>
+
+<script src="/formValidation.js" async defer></script>

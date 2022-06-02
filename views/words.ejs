@@ -1,0 +1,12 @@
+<% layout('../layouts/boilerplate') %>
+<div class="words">
+    <% for(let word of all){ %>
+    <a href="word/<%= word.id%>">
+        <section class="word">
+            <h1><%= word.title%></h1>
+            <h3><%= word.category %></h3>
+            <p><%= word.text %></p>
+        </section>
+    </a>
+    <% } %>
+</div>

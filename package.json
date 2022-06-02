@@ -1,0 +1,45 @@
+{
+  "name": "wordVault",
+  "version": "1.0.0",
+  "description": "Here we go...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sotiris64/wordVault.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sotiris64/wordVault/issues"
+  },
+  "homepage": "https://github.com/Sotiris64/wordVault#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.2",
+    "express-mongo-sanitize": "^2.1.0",
+    "express-session": "^1.17.2",
+    "helmet": "^5.0.1",
+    "joi": "^17.5.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.1.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0",
+    "simplex-noise": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
+}

@@ -1,0 +1,44 @@
+<% layout('../layouts/boilerplate') %>
+<div class="word card">
+    <h1><%= found.title%></h1>
+    <h2><%= found.op.username%></h2>
+    <h3><%= found.language%></h3>
+
+    <h4><%= found.category %></h4>
+
+    <p><%= found.text %></p>
+
+    <% if(user && found.op.equals(user._id)){ %>
+    <div class="options">
+
+        <form action='/word/<%=found.id%>?_method=DELETE' method='POST'><button class='delete-item'>Delete</button>
+        </form>
+        <a href="/word/<%= found.id%>/edit" class="update-item" role="button">Update</a>
+    </div>
+    <% } %>
+</div>
+
+<div class="wordCard">
+    <form action='/word/<%= found.id%>/comment' method='POST' id='main' class='cool'>
+        <h1>Add a Comment</h1>
+        <label for="text">Text</label>
+        <textarea name="comment[text]" id="text">Hey, great word you found there!</textarea>
+
+        <button>Add comment</button>
+    </form>
+
+    <div class="comments">
+        <% for(let comment of found.comments){ %>
+        <section class="comment">
+            <h2><%= comment.op.username %></h2>
+            <p><%- comment.text %></p>
+            <% if(user && found.op.equals(user._id)){ %>
+            <form action='/word/<%=found.id%>/comment/<%=comment.id%>?_method=DELETE' method='POST'><button
+                    class='delete-item'>X</button></form>
+            <% } %>
+        </section>
+        <% } %>
+    </div>
+</div>
+
+<script src="/formValidation.js" async defer></script>
